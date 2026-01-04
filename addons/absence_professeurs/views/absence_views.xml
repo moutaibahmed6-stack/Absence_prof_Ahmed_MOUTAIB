@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_absence_tree" model="ir.ui.view">
+        <field name="name">absence.tree</field>
+        <field name="model">absence.absence</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="professeur_id"/>
+                <field name="date_debut"/>
+                <field name="date_fin"/>
+                <field name="motif"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_absence_form" model="ir.ui.view">
+        <field name="name">absence.form</field>
+        <field name="model">absence.absence</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="professeur_id"/>
+                        <field name="date_debut"/>
+                        <field name="date_fin"/>
+                        <field name="motif"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_absence" model="ir.actions.act_window">
+        <field name="name">Absences</field>
+        <field name="res_model">absence.absence</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

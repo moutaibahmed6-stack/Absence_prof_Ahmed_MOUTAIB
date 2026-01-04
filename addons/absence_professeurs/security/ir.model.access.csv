@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_professeur,access_professeur,model_absence_professeur,,1,1,1,1
+access_absence,access_absence,model_absence_absence,,1,1,1,1
